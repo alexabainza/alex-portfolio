@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { SocialIcon } from "react-social-icons";
+import profile from "./assets/image.png";
+import AboutMe from "./AboutMe";
+import { Link } from "react-router-dom";
 
 function Landing() {
   const [navbarHeight, setNavbarHeight] = useState(0);
-
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   useEffect(() => {
     const navbarElement = document.querySelector(".navbar"); // Adjust selector
     if (navbarElement) {
@@ -11,44 +19,62 @@ function Landing() {
     }
   }, []);
   return (
-    <div className="mt-20 mx-20 max-h-full flex flex-row align-center">
-      <div className="flex flex-col align-center gap-20">
-        <div className="intro">
-          <h1 className="text-7xl text-white">
-            Hi, I'm <span className="text-[#97EFE9]">Alex</span>
-          </h1>
-          <h1 className="text-4xl text-white mt-2">
-            Data. Developer. Designer.
-          </h1>
-        </div>
+    <div className="flex flex-col min-h-screen">
+      <div className="mt-10 mx-20 h-screen border-2 flex flex-row align-center items-center">
+        <div className="flex flex-col w-1/2 content-center gap-20">
+          <div className="intro">
+            <h1 className="text-7xl text-white">
+              Hi, I'm <span className="text-[#97EFE9]">Alex</span>
+            </h1>
+            <h1 className="text-4xl text-white mt-2">
+              Data. Developer. Designer.
+            </h1>
+          </div>
 
-        <div className="flex flex-row gap-2">
-          <SocialIcon
-            network="facebook"
-            bgColor="white"
-            fgColor="#32333D"
-            style={{ height: 40, width: 40 }}
-          />
-          <SocialIcon
-            network="instagram"
-            bgColor="white"
-            fgColor="#32333D"
-            style={{ height: 40, width: 40 }}
-          />
+          <div className="flex flex-row gap-2">
+            <Link to="https://www.facebook.com/sandy.abainza/">
+              <SocialIcon
+                network="facebook"
+                bgColor="#97EFE9"
+                fgColor="#32333D"
+                style={{ height: 35, width: 35 }}
+              />
+            </Link>
+            <Link to="https://www.instagram.com/">
+              <SocialIcon
+                network="instagram"
+                bgColor="#97EFE9"
+                fgColor="#32333D"
+                style={{ height: 35, width: 35 }}
+              />
+            </Link>
 
-          <SocialIcon
-            network="github"
-            bgColor="white"
-            fgColor="#32333D"
-            style={{ height: 40, width: 40 }}
-          />
-          <SocialIcon
-            network="linkedin"
-            bgColor="white"
-            fgColor="#32333D"
-            style={{ height: 40, width: 40 }}
-          />
+            <Link to="https://github.com/alexabainza">
+              <SocialIcon
+                network="github"
+                bgColor="#97EFE9"
+                fgColor="#32333D"
+                style={{ height: 35, width: 35 }}
+              />
+            </Link>
+            <Link to="https://www.linkedin.com/in/alex-abainza-321867220/">
+              <SocialIcon
+                network="linkedin"
+                bgColor="#97EFE9"
+                fgColor="#32333D"
+                style={{ height: 35, width: 35 }}
+              />
+            </Link>
+          </div>
         </div>
+        <div className="text-white w-1/2">
+          <img src={profile} className="h-full w-full"></img>
+        </div>
+      </div>
+      <AboutMe />
+
+      <div id="experiences" className="h-screen border-2 text-white">
+        Experiencs
       </div>
     </div>
   );
