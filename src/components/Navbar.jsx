@@ -1,15 +1,9 @@
 import React from "react";
 import icon from "../assets/Carbs.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
-  const scrollToSection = (id, event) => {
-    event.preventDefault();
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const location = useLocation();
 
   return (
     <div>
@@ -61,39 +55,20 @@ function Navbar() {
               <li>
                 <Link
                   to="/landing"
-                  onClick={(e) => scrollToSection("home", e)}
                   className="block py-2 px-3 text-sm text-[#97EFE9] bg-blue-700 rounded md:bg-transparent md:text-[#97EFE9] md:p-0 md:dark:text-[#97EFE9]"
                   aria-current="page"
                 >
                   home.
                 </Link>
               </li>
+
               <li>
-                <a
-                  href="#"
-                  onClick={(e) => scrollToSection("about", e)}
-                  className="block py-2 px-3 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#97EFE9] md:p-0 md:dark:hover:text-[#97EFE9] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  about me.
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  onClick={(e) => scrollToSection("experiences", e)}
-                  className="block py-2 px-3 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#97EFE9] md:p-0 md:dark:hover:text-[#97EFE9] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  experiences.
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  onClick={(e) => scrollToSection("portfolio", e)}
+                <Link
+                  to="/portfolio"
                   className="block py-2 px-3 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#97EFE9] md:p-0 md:dark:hover:text-[#97EFE9] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   portfolio.
-                </a>
+                </Link>
               </li>
               <li>
                 <Link

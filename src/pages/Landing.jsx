@@ -75,7 +75,6 @@ function Landing() {
       </div>
       <AboutMe />
       <Experiences />
-      <Portfolio />
     </div>
   );
 }
