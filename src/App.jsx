@@ -1,8 +1,9 @@
 import { useState } from "react";
-import Navbar from "./Navbar";
-import Landing from "./Landing";
-import AboutMe from "./AboutMe";
+import Navbar from "./components/Navbar";
+import Landing from "./pages/Landing";
+import AboutMe from "./pages/AboutMe";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CaseStudy from "./pages/casestudy/CaseStudy";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/landing" element={<Landing />} />
           <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/casestudy" element={<CaseStudy />} />
         </Routes>
       </BrowserRouter>
     </>

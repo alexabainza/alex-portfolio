@@ -1,5 +1,5 @@
 import React from "react";
-import icon from "./assets/Carbs.svg";
+import icon from "../assets/Carbs.svg";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <div>
       <nav
-        className="bg-white dark:bg-[#32333D] fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+        className="bg-[#1f1345] fixed w-full z-20 top-0 start-0 border-b border-gray-200 "
         id="navbar"
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -57,16 +57,16 @@ function Navbar() {
             className="flex items-center justify-end space-x-3 md:order-2 rtl:space-x-reverse"
             id="navbar-sticky"
           >
-            <ul className="flex flex-col p-4 md:p-0 mt-4 font-light border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col p-4 md:p-0 mt-4 font-light border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0   ">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/landing"
                   onClick={(e) => scrollToSection("home", e)}
                   className="block py-2 px-3 text-sm text-[#97EFE9] bg-blue-700 rounded md:bg-transparent md:text-[#97EFE9] md:p-0 md:dark:text-[#97EFE9]"
                   aria-current="page"
                 >
                   home.
-                </a>
+                </Link>
               </li>
               <li>
                 <a
@@ -96,13 +96,12 @@ function Navbar() {
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  onClick={(e) => scrollToSection("contact", e)}
+                <Link
+                  to="/casestudy"
                   className="block py-2 px-3 text-sm text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#97EFE9] md:p-0 md:dark:hover:text-[#97EFE9] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                  contact me.
-                </a>
+                  case study.
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { SocialIcon } from "react-social-icons";
-import profile from "./assets/image.png";
+import profile from "../assets/image.png";
 import AboutMe from "./AboutMe";
 import { Link } from "react-router-dom";
+import Experiences from "./Experiences";
+import Portfolio from "./Portfolio";
 
 function Landing() {
   const [navbarHeight, setNavbarHeight] = useState(0);
@@ -19,16 +21,16 @@ function Landing() {
     }
   }, []);
   return (
-    <div className="flex flex-col min-h-screen">
-      <div className="mt-10 mx-20 h-screen border-2 flex flex-row align-center items-center">
+    <div className="flex flex-col gap-3 min-h-screen">
+      <div className="mt-10 px-20 h-screen border-2 flex flex-row align-center items-center">
         <div className="flex flex-col w-1/2 content-center gap-20">
           <div className="intro">
-            <h1 className="text-7xl text-white">
+            {/* <h1 className="text-7xl text-white">
               Hi, I'm <span className="text-[#97EFE9]">Alex</span>
             </h1>
             <h1 className="text-4xl text-white mt-2">
               Data. Developer. Designer.
-            </h1>
+            </h1> */}
           </div>
 
           <div className="flex flex-row gap-2">
@@ -67,15 +69,13 @@ function Landing() {
             </Link>
           </div>
         </div>
-        <div className="text-white w-1/2">
+        {/* <div className="text-white w-1/2">
           <img src={profile} className="h-full w-full"></img>
-        </div>
+        </div> */}
       </div>
       <AboutMe />
-
-      <div id="experiences" className="h-screen border-2 text-white">
-        Experiencs
-      </div>
+      <Experiences />
+      <Portfolio />
     </div>
   );
 }
