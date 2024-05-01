@@ -6,11 +6,11 @@ const ImageGallery = () => {
       <div>
         {/* Content for Tab 1 */}
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="grid gap-4">
+        <div class="grid grid-cols-12 md:grid-cols-4 gap-4">
+          <div class="grid gap-4 gallery-image-container">
             <div>
               <img
-                class="h-auto max-w-full rounded-lg"
+                class="gallery-image h-auto max-w-full rounded-lg"
                 src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
                 alt=""
               />
