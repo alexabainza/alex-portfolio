@@ -6,11 +6,11 @@ const ImageGallery = () => {
       <div>
         {/* Content for Tab 1 */}
 
-        <div class="grid grid-cols-12 md:grid-cols-4 gap-4">
+        <div class="grid grid-cols-12 md:grid-cols-3 gap-4">
           <div class="grid gap-4 gallery-image-container">
             <div>
               <img
-                class="gallery-image h-auto max-w-full rounded-lg"
+                class="h-auto max-w-full rounded-lg"
                 src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
                 alt=""
               />
@@ -72,29 +72,6 @@ const ImageGallery = () => {
               <img
                 class="h-auto max-w-full rounded-lg"
                 src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="grid gap-4">
-            <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
                 alt=""
               />
             </div>

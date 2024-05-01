@@ -8,10 +8,10 @@ const Portfolio = () => {
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
-
+  // bg-[#1f1345]
   return (
-    <div className="min-h-screen mt-16 mx-10 px-10 flex flex-col gap-4">
-      <div className="sticky header top-10 z-10 bg-[#1f1345]">
+    <div className="min-h-screen  mt-16  flex flex-col gap-4">
+      <div className="sticky w-[100%] header top-10 z-10 bg-[#1f1345] px-20">
         <div className="flex flex-col gap-4">
           <p className="text-white text-5xl pt-12">My Portfolio</p>
           <p className="text-gray-400 w-1/2">
@@ -61,11 +61,11 @@ const Portfolio = () => {
             </a>
           </li>
         </ul>
-        <hr className="my-2" />
+        <hr className="my-2 border-gray-400" />
       </div>
 
       {/* Content for each tab */}
-      <div>
+      <div className="px-20">
         {activeTab === "tab1" && <ImageGallery />}
         {activeTab === "tab2" && (
           <div className="text-white">

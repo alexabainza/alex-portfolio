@@ -15,6 +15,9 @@ const DevImageGallery = () => {
         figma_link:
           "https://www.figma.com/file/s5YiRjVQxjsN9jP3yKfsXc/UI%2FUX-APPTIVE?type=design&node-id=347%3A27&mode=design&t=1iEzZSuR6AlImYBD-1",
         image: apptive,
+        demo_link:
+          "https://drive.google.com/file/d/1jaZzfNXySFXSvPYSpUIhD9HRvKUkfy28/view?usp=sharing",
+        category: ["React", "ExpressJS", "NodeJS", "Bootstrap", "PHPMyAdmin"],
       },
       {
         title: "Fitness Tracking App",
@@ -24,12 +27,22 @@ const DevImageGallery = () => {
         figma_link:
           "https://www.figma.com/file/s5YiRjVQxjsN9jP3yKfsXc/UI%2FUX-APPTIVE?type=design&node-id=347%3A27&mode=design&t=1iEzZSuR6AlImYBD-1",
         image: apptive,
+        demo_link:
+          "https://drive.google.com/file/d/1jaZzfNXySFXSvPYSpUIhD9HRvKUkfy28/view?usp=sharing",
+        category: [
+          "Java Springboot",
+          "React",
+          "Tailwilnd",
+          "NodeJS",
+          "ExpressJS",
+          "MySQL",
+        ],
       },
     ],
   };
   return (
     <>
-      <div class="grid gap-4">
+      <div class="grid gap-5">
         {portfolio.details.map((detail, index) => (
           <GalleryImage key={index} details={detail} />
         ))}

@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div>
       <nav
-        className="bg-[#1f1345] fixed w-full z-20 top-0 start-0 border-b border-gray-200 "
+        className="bg-[#1f1345] fixed w-full z-20 top-0 start-0 border-b border-gray-600 "
         id="navbar"
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">

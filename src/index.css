@@ -28,6 +28,6 @@ body {
 }
 
 .gallery-image:hover {
-  transform: scale(1.1); /* Scale the image by 20% when hovered */
+  transform: scale(1.05); /* Scale the image by 20% when hovered */
   opacity: 1; /* Fully visible on hover */
 }
