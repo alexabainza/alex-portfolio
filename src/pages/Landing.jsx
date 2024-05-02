@@ -69,9 +69,9 @@ function Landing() {
             </Link>
           </div>
         </div>
-        <div className="text-white w-1/2 flex">
+        {/* <div className="text-white w-1/2 flex">
           <img src={profile} className="h-full w-full"></img>
-        </div>
+        </div> */}
       </div>
       <AboutMe />
       <Experiences />

@@ -26,8 +26,8 @@ const Portfolio = () => {
               href="#"
               className={`inline-block px-4 py-3 rounded-sm ${
                 activeTab === "tab1"
-                  ? "text-white bg-blue-600 active"
-                  : "hover:text-gray-900 hover:bg-blue-700 "
+                  ? "text-white bg-red-500 active"
+                  : "hover:text-gray-900 hover:bg-red-400 "
               }`}
               onClick={() => handleTabClick("tab1")}
             >
@@ -39,8 +39,8 @@ const Portfolio = () => {
               href="#"
               className={`inline-block px-4 py-3 rounded-sm ${
                 activeTab === "tab2"
-                  ? "text-white bg-blue-600 active"
-                  : "hover:text-gray-900 hover:bg-blue-700 "
+                  ? "text-white bg-red-500 active"
+                  : "hover:text-gray-900 hover:bg-red-400 "
               }`}
               onClick={() => handleTabClick("tab2")}
             >
@@ -52,8 +52,8 @@ const Portfolio = () => {
               href="#"
               className={`inline-block px-4 py-3 rounded-sm ${
                 activeTab === "tab3"
-                  ? "text-white bg-blue-600 active"
-                  : "hover:text-gray-900 hover:bg-blue-700 "
+                  ? "text-white bg-red-500 active"
+                  : "hover:text-gray-900 hover:bg-red-400 "
               }`}
               onClick={() => handleTabClick("tab3")}
             >
