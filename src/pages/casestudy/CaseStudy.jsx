@@ -2,54 +2,60 @@ import React from "react";
 import mockup from "../../assets/ecocycle-mockup.png";
 import AboutEcoCycle from "./AboutEcoCycle";
 import ewastebg from "../../assets/ewaste-bg.jpg";
+import result from "../../assets/shopresult.png";
+import wave from "../../assets/wave1.png";
+import Prototyping from "./Prototyping";
+import UserPersona from "./UserPersona";
+import UserTesting from "./UserTesting";
+import Reflection from "./Reflection";
+import FinalDesign from "./FinalDesign";
+import ResearchInsights from "./ResearchInsights";
 
 const CaseStudy = () => {
   return (
-    <div className="gap-5 min-h-screen relative">
-      <div className="relative">
-        <img
-          src={ewastebg}
-          className="h-screen w-full object-cover"
-          alt="Background"
-        ></img>
-        <div className="absolute inset-0 bg-blue-900 opacity-70 " />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-2 justify-center items-center align-middle">
-          <h1
-            className=" text-9xl  text-white font-semibold text-center"
-            style={{
-              fontSize: 180,
-            }}
-          >
+    <div className="gap-5 mt-16 min-h-screen relative border-b-2 border-b-gray-500">
+      <div className="h-screen relative overflow-hidden">
+        <div className="h-screen flex flex-col gap-3 justify-start pt-10 relative z-10">
+          <h1 className="text-white text-center text-9xl font-semibold">
             Eco
-            <span className="text-blue-300">Cycle</span>
+            <span className="text-blue-400">Cycle</span>
           </h1>
-          <p className="text-white text-2xl text-center mt-5">
-            Harnessing the power of technology to come up with solutions for
-            environmental problems
+          <p className="text-white text-xl text-center">
+            Harnessing the power of technology to combat environmental problems
           </p>
-          <button class=" bg-blue-500 hover:bg-blue-200 text-white py-2 px-4 rounded-lg w-[50%] mt-2">
-            Learn More
-          </button>
+          <div className="h-screen flex justify-center items-center flex-wrap gap-10 px-5">
+            <img
+              src={result}
+              className="w-[90%] max-w-[20%] object-contain pt-12"
+              alt="Result"
+            ></img>
+            <img
+              src={mockup}
+              className="w-[90%] max-w-[30%] object-contain pt-12 mx-5"
+              alt="Mockup"
+            ></img>
+            <img
+              src={result}
+              className="w-[90%] max-w-[20%] object-contain pt-12"
+              alt="Result"
+            ></img>
+          </div>
+        </div>
+        <div className="absolute bottom-0 inset-x-0">
+          <img
+            src={wave}
+            className="w-full object-contain"
+            style={{ position: "absolute", bottom: "0" }}
+          ></img>
         </div>
       </div>
 
-      <div className="w-full flex flex-row mt-20 min-h-screen items-center">
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-          <h1 className="text-9xl text-white border-2">EcoCycle</h1>
-          <p className="text-xl w-3/4">
-            Harnessing the power of technology to come up with solutions for
-            environmental problems
-          </p>
-          <button
-            type="button"
-            className="text-white bg-[#97EFE9] w-1/3 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
-          >
-            Get to know us
-          </button>
-        </div>
-        <img src={mockup} className="h-screen w-1/4" alt="Mockup"></img>
-      </div>
       <AboutEcoCycle />
+      <UserPersona />
+      <ResearchInsights />
+      <Prototyping />
+      <FinalDesign />
+      <Reflection />
     </div>
   );
 };
