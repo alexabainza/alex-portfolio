@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { SocialIcon } from "react-social-icons";
-import profile from "../assets/image.png";
+import profile from "../assets/pfp.png";
 import AboutMe from "./AboutMe";
 import { Link } from "react-router-dom";
 import Experiences from "./Experiences";

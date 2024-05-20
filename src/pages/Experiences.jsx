@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import pfp from "../assets/pfp1.jpg";
 const Experiences = () => {
   return (
     <div
@@ -13,7 +13,7 @@ const Experiences = () => {
             <div class="bg-[rgb(47,30,102)] shadow rounded-xl px-10 py-20">
               <div class="flex flex-col items-center">
                 <img
-                  src="https://randomuser.me/api/portraits/men/94.jpg"
+                  src={pfp}
                   class="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0"
                 ></img>
                 <h1 class="text-xl font-bold text-white">Alex Abainza</h1>
