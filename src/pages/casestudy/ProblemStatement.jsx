@@ -7,7 +7,7 @@ const ProblemStatement = () => {
         <h1 className="text-white text-center lg:text-6xl md:text-5xl sm:text-4xl text-4xl font-semibold">
           Problem <span className="text-[#C1D5FE]">Statement</span>
         </h1>
-        <p className="text-slate-300 text-start lg:text-lg md:text-md sm:text-md text-md">
+        <p className="lg:text-xl md:text-lg sm:text-md text-md text-slate-300 text-center">
           The major challenges surrounding the management of e-waste in the
           Philippines are the unavailability of accurate estimates of quantities
           of total e-waste generation and a low level of awareness among
@@ -27,7 +27,7 @@ const ProblemStatement = () => {
         <h1 className="text-slate-300 text-center lg:text-6xl md:text-5xl sm:text-4xl text-4xl font-semibold">
           <span className="text-[#C1D5FE]">Objectives</span>
         </h1>
-        <p className="text-slate-300 text-start lg:text-lg md:text-md sm:text-md text-md">
+        <p className="lg:text-xl md:text-lg sm:text-md text-md text-slate-300 text-center">
           The EcoCycle E-waste Management App aims to:
           <br />
           <br />

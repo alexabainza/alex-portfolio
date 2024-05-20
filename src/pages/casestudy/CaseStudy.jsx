@@ -21,8 +21,9 @@ const CaseStudy = () => {
       <div className=" overflow-hidden border-b-2 border-b-gray-500">
         <div className="h-screen flex flex-col gap-3 justify-start pt-10 relative z-10">
           <p className="lg:text-8xl md:text-6xl sm:text-4xl text-4xl text-white font-semibold text-center">
-            Eco
-            <span className="text-blue-400">Cycle</span>
+            <span className="font-bold">
+              Eco<span className="text-[#C1D5FE]">Cycle</span>
+            </span>
           </p>
           <p className="text-white lg:text-xl md:text-lg sm:text-md text-md text-center">
             Harnessing the power of technology to combat environmental problems
@@ -48,10 +49,10 @@ const CaseStudy = () => {
       </div>
 
       <AboutEcoCycle />
+      <ResearchInsights />
       <ProblemStatement />
       <UserPersona />
       <Brainstorming />
-      <ResearchInsights />
       <Prototyping />
       <Feedbacking />
       <FinalDesign />

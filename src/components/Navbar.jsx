@@ -9,7 +9,7 @@ function Navbar() {
     <nav class=" bg-[#1f1345] fixed w-full z-20 top-0 start-0 border-b-2 border-b-gray-500 border-gray-">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
-          to="/landing"
+          to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img src={icon} className="h-8" alt="Flowbite Logo" />

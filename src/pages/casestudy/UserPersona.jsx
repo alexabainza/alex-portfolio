@@ -13,7 +13,7 @@ const UserPersona = () => {
         <p className="lg:text-8xl md:text-6xl sm:text-4xl text-4xl text-white font-semibold">
           User <span className="text-[#C1D5FE] font-bold">Persona</span>
         </p>
-        <p className="text-slate-300 lg:text-2xl md:text-lg sm:text-md text-md text-start">
+        <p className="text-slate-300 lg:text-2xl md:text-lg sm:text-md text-md ">
           In this section of the ideation portfolio, we introduce the User
           Personas, which serve as the fictional personification of the target
           audience of EcoCycle.

@@ -7,7 +7,7 @@ const Experiences = () => {
       className="flex lg:flex-row md:flex-col sm:flex-col flex-col py-16 gap-10 min-h-screen lg:px-16 md:px-12 sm:px-4 px-8"
       id="experiences"
     >
-      <div class="lg:w-2/5 md:w-full sm:w-full w-full">
+      <div class="lg:w-3/5 md:w-full sm:w-full w-full">
         <div className=" text-gray-400">
           <div className="col-span-1 sm:col-span-2 md:col-span-1">
             <div class="bg-[rgb(47,30,102)] shadow rounded-xl px-10 py-20">

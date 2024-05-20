@@ -22,7 +22,7 @@ const Impact = () => {
           Listed below are the statistical data on how our respondents felt
           about our prototype.
         </p>
-        <div className="lg:w-3/4 md:w-full sm:w-full w-full h-screen rounded-2xl flex py-0">
+        <div className="lg:w-3/4 md:w-full sm:w-full w-full h-screen rounded-2xl flex">
           <Carousel slide={false}>
             <img src={fb1} alt="..." />
             <img src={fb2} alt="..." />

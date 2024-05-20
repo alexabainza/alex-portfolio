@@ -28,7 +28,7 @@ const Feedbacking = () => {
           <h2 className="text-white text-start lg:text-4xl md:text-3xl sm:text-2xl text-2xl font-semibold">
             Positive Feedback
           </h2>
-          <ol className="list-decimal ml-5 text-slate-300 text-start lg:text-lg md:text-md sm:text-md text-md">
+          <ol className="list-decimal ml-5 lg:text-xl md:text-lg sm:text-md text-md text-slate-300">
             <li>
               <span className="font-semibold text-[#C1D5FE] ">
                 Clean and Intuitive UI.{" "}
@@ -71,7 +71,7 @@ const Feedbacking = () => {
           <h2 className="text-white text-start lg:text-4xl md:text-3xl sm:text-2xl text-2xl font-semibold">
             Areas for Improvement
           </h2>
-          <ol className="list-decimal ml-5 text-slate-300 text-start lg:text-lg md:text-md sm:text-md text-md">
+          <ol className="list-decimal ml-5 lg:text-xl md:text-lg sm:text-md text-md text-slate-300">
             <li>
               Some respondents are concerned that older users might find the app
               challenging to navigate due to its detailed nature.
@@ -101,7 +101,7 @@ const Feedbacking = () => {
           <h2 className="text-white text-start lg:text-4xl md:text-3xl sm:text-2xl text-2xl font-semibold">
             Features that Stood out{" "}
           </h2>
-          <ol className="list-decimal ml-5 text-slate-300 text-start lg:text-lg md:text-md sm:text-md text-md">
+          <ol className="list-decimal ml-5 lg:text-xl md:text-lg sm:text-md text-md text-slate-300">
             <li>
               <span className="font-semibold text-[#C1D5FE]">
                 Step-by-Step Tutorials{" "}

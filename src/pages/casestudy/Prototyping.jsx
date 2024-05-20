@@ -13,6 +13,7 @@ const Prototyping = () => {
       <p className="lg:text-8xl md:text-6xl sm:text-4xl text-4xl text-[#C1D5FE] font-semibold">
         Prototyping
       </p>
+
       <p className="text-slate-300 lg:text-2xl md:text-lg sm:text-md text-md ">
         For this application, we were able to come up with three designs, as we
         felt like while the first two designs give off care for the environment
