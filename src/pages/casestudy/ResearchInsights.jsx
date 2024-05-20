@@ -2,12 +2,12 @@ import React from "react";
 import techwaste from "../../assets/e-waste.jpg";
 const ResearchInsights = () => {
   return (
-    <div className="px-20 min-h-screen flex py-16 gap-8 flex-row border-b-2 border-b-gray-500">
-      <div className="w-3/5 flex flex-col gap-8 justify-center p-8">
-        <h1 className="text-white text-start text-7xl font-semibold">
+    <div className="lg:px-20 md:px-16 sm:px-4 px-4 min-h-screen flex lg:flex-row md:flex-row sm:flex-col flex-col py-16 lg:gap-16 sm:gap-0 gap-0 border-b-2 border-b-gray-500">
+      <div className="lg:w-3/5 sm:w-full w-full flex flex-col gap-8 justify-center p-8 ">
+        <p className="lg:text-8xl md:text-6xl sm:text-5xl text-5xl text-justify text-white">
           Research <span className="text-[#C1D5FE] font-bold">Insights</span>
-        </h1>
-        <p className="text-white text-md">
+        </p>
+        <p className="text-slate-300 lg:text-lg md:text-md sm:text-md text-md">
           Electronic waste (commonly known as e-waste) is considered as one of
           the largest and most complex waste systems in the world, which is owed
           to the rapid expansion of technology and the consumption driven
@@ -43,7 +43,10 @@ const ResearchInsights = () => {
           </ol>
         </p>
       </div>
-      <img src={techwaste} className="w-2/5 object-cover rounded-2xl" />
+      <img
+        src={techwaste}
+        className="lg:w-2/5 sm:w-full w-full object-cover rounded-2xl h-screen border-2"
+      />
     </div>
   );
 };

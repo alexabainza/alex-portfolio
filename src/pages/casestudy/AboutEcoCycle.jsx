@@ -2,15 +2,15 @@ import React from "react";
 import landingimage from "../../assets/landingimage.png";
 const AboutEcoCycle = () => {
   return (
-    <div className="text-white w-full flex flex-row gap-5 h-screen p-20 border-b-2 border-b-gray-500 justify-center items-center">
-      <div className="w-2/3 gap-6 flex flex-col p-12">
-        <p className="text-7xl text-justify ">
+    <div className="min-h-screen py-10 text-white w-full flex lg:flex-row md:flex-col sm:flex-col flex-col gap-5 lg:p-20 md:px-16 sm:px-10 px-10 border-b-2 border-b-gray-500 justify-center items-center">
+      <div className="lg:w-2/3 md:w-full sm:w-full w-full gap-6 flex flex-col lg:py-16 md:py-12 sm:py-8 py-8">
+        <p className="lg:text-8xl md:text-6xl sm:text-5xl text-5xl text-justify ">
           About{" "}
           <span className="font-bold">
             Eco<span className="text-[#C1D5FE]">Cycle</span>
           </span>
         </p>
-        <p className="text-xl text-slate-300">
+        <p className="lg:text-xl md:text-lg sm:text-md text-md text-slate-300">
           The idea behind this ideation portfolio is designed to address the
           growing concern of electronic waste (e-waste) management in the
           country. In this era where people rely on their electronic devices to
@@ -30,8 +30,11 @@ const AboutEcoCycle = () => {
           future.
         </p>
       </div>
-      <div className="w-1/3 flex justify-center">
-        <img className="object-cover h-[50%] w-[60%]" src={landingimage}></img>
+      <div className="lg:w-1/3 md:w-full sm:w-full w-full flex justify-center">
+        <img
+          className="object-cover lg:h-[50%] lg:w-[60%] sm:h-[50%] sm:w-[60%] "
+          src={landingimage}
+        ></img>
       </div>
     </div>
   );

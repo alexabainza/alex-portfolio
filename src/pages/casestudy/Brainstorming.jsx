@@ -9,21 +9,22 @@ import { FaLink } from "react-icons/fa";
 
 const Brainstorming = () => {
   return (
-    <div className="h-screen py-16 px-20 flex flex-col gap-8 justify-center items-center border-b-2 border-b-gray-500">
-      <h1 className="text-white text-6xl font-semibold text-center">
-        <span className="text-[#C1D5FE]">Brainstorming </span>Session Outputs
-      </h1>
+    <div className="h-screen py-16 lg:px-20 md:px-16 sm:px-8 px-8 flex flex-col gap-8 justify-center items-center border-b-2 border-b-gray-500">
+      <p className="lg:text-8xl md:text-6xl sm:text-4xl text-4xl text-[#C1D5FE] font-semibold">
+        <span className="text-[#C1D5FE] font-bold">Brainstorming </span>Session
+        Outputs
+      </p>
       <Link
         to="https://miro.com/app/board/uXjVNr9Qal4=/?share_link_id=596628073627"
-        className="flex gap-4"
+        className="flex gap-4 justify-start items-start"
       >
         <FaLink color="white" size={24} />
-        <p className="text-white hover:underline text-xl">
+        <p className="text-gray-300 hover:underline hover:text-white lg:text-2xl md:text-lg sm:text-md text-md">
           {" "}
           View Miro Board here
         </p>
       </Link>
-      <div className="w-[60%] h-full rounded-2xl bg-white flex ">
+      <div className="lg:w-[60%] md:w-full sm:w-full w-full h-full rounded-2xl bg-white flex ">
         <Carousel slide={false}>
           <img src={valueproposition} alt="Value Proposition" />
           <img src={vpup1} alt="User Personas 1 and 2" />

@@ -16,40 +16,33 @@ import Feedbacking from "./Feedbacking";
 
 const CaseStudy = () => {
   return (
-    <div className="gap-5 mt-16 min-h-screen relative border-b-2 border-b-gray-500">
-      <div className="h-screen relative overflow-hidden">
+    <div className="gap-5 mt-16 min-h-full w-full">
+      <div className=" overflow-hidden border-b-2 border-b-gray-500">
         <div className="h-screen flex flex-col gap-3 justify-start pt-10 relative z-10">
-          <h1 className="text-white text-center text-9xl font-semibold">
+          <h1 className="text-white text-center lg:text-8xl md:text-6xl sm:text-5xl text-5xl font-semibold">
             Eco
             <span className="text-blue-400">Cycle</span>
           </h1>
-          <p className="text-white text-xl text-center">
+          <p className="text-white lg:text-xl md:text-lg sm:text-md text-md text-center">
             Harnessing the power of technology to combat environmental problems
           </p>
-          <div className="h-screen flex justify-center items-center flex-wrap gap-10 px-5">
+          <div className="h-screen flex sm:flex-col flex-col justify-center items-center flex-wrap lg:gap-10 md:gap-5 sm:gap-2 gap-2 px-5">
             <img
               src={result}
-              className="w-[90%] max-w-[20%] object-contain pt-12"
+              className="w-[90%] max-w-[20%] object-contain pt-12 sm:hidden hidden"
               alt="Result"
             ></img>
             <img
               src={mockup}
-              className="w-[90%] max-w-[30%] object-contain pt-12 mx-5"
+              className="lg:max-w-[30%] object-contain lg:pt-12 md:pt-8 sm:pt-4 pt-4 mx-5 sm:w-[90%] w-[90%]"
               alt="Mockup"
             ></img>
             <img
               src={result}
-              className="w-[90%] max-w-[20%] object-contain pt-12"
+              className="w-[90%] max-w-[20%] object-contain pt-12 sm:hidden hidden"
               alt="Result"
             ></img>
           </div>
-        </div>
-        <div className="absolute bottom-0 inset-x-0">
-          <img
-            src={wave}
-            className="w-full object-contain"
-            style={{ position: "absolute", bottom: "0" }}
-          ></img>
         </div>
       </div>
 
