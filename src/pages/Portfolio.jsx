@@ -8,7 +8,6 @@ const Portfolio = () => {
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
-  // bg-[#1f1345]
   return (
     <div className="min-h-screen  mt-16  flex flex-col gap-4">
       <div className="sticky w-[100%] header top-10 z-10 bg-[#1f1345] px-20">
@@ -64,18 +63,15 @@ const Portfolio = () => {
         <hr className="my-2 border-gray-400" />
       </div>
 
-      {/* Content for each tab */}
       <div className="px-20">
         {activeTab === "tab1" && <ImageGallery />}
         {activeTab === "tab2" && (
           <div className="text-white">
-            {/* Content for Tab 2 */}
             <DevImageGallery />
           </div>
         )}
         {activeTab === "tab3" && (
           <div className="text-white">
-            {/* Content for Tab 3 */}
             <ImageGallery />{" "}
           </div>
         )}

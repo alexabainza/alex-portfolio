@@ -21,15 +21,19 @@ function Landing() {
     }
   }, []);
   return (
-    <div className="flex flex-col gap-3 min-h-screen">
-      <div className="mt-10 px-48 h-screen flex flex-row align-center items-center">
-        <div className="flex flex-col w-1/2 content-center gap-20">
+    <div className="flex flex-col gap-3 min-h-screen border-b-2 border-b-gray-500">
+      <div className="lg:mt-16 md:mt-24 sm:mt-28 mt-28 lg:px-48 md:px-20 sm:px-0 px-0  lg:gap-8 md:gap-4 sm:gap-4 gap-0 min-h-screen flex lg:flex-row md:flex-col sm:flex-col flex-col align-center items-center">
+        <div className="flex flex-col w-1/2 gap-8">
           <div className="intro">
-            <h1 className="text-8xl text-white">
-              Hi, I'm <span className="text-[#07BFFB]">Alex</span>
+            <h1 className="lg:text-7xl md:text-6xl sm:text-5xl text-6xl text-white">
+              Hi, I'm <span className="text-[#C1D5FE] font-semibold">Alex</span>
             </h1>
-            <h1 className="text-5xl text-white mt-2">
-              Data. Developer. Designer.
+            <h1 className="text-lg text-white mt-5">
+              An aspiring full-stack developer for both Mobile and Website
+              development, with experience in React Native and React JS,
+              Flutter, Java, Express JS, PHPMyAdmin, and MySQL. Currently, I am
+              focusing on learning MERN stack development so that I could deploy
+              my projects on the web with a functioning database.{" "}
             </h1>
           </div>
 
@@ -37,7 +41,7 @@ function Landing() {
             <Link to="https://www.facebook.com/sandy.abainza/">
               <SocialIcon
                 network="facebook"
-                bgColor="#07BFFB"
+                bgColor="#C1D5FE"
                 fgColor="#32333D"
                 style={{ height: 35, width: 35 }}
               />
@@ -45,7 +49,7 @@ function Landing() {
             <Link to="https://www.instagram.com/">
               <SocialIcon
                 network="instagram"
-                bgColor="#07BFFB"
+                bgColor="#C1D5FE"
                 fgColor="#32333D"
                 style={{ height: 35, width: 35 }}
               />
@@ -54,7 +58,7 @@ function Landing() {
             <Link to="https://github.com/alexabainza">
               <SocialIcon
                 network="github"
-                bgColor="#07BFFB"
+                bgColor="#C1D5FE"
                 fgColor="#32333D"
                 style={{ height: 35, width: 35 }}
               />
@@ -62,14 +66,14 @@ function Landing() {
             <Link to="https://www.linkedin.com/in/alex-abainza-321867220/">
               <SocialIcon
                 network="linkedin"
-                bgColor="#07BFFB"
+                bgColor="#C1D5FE"
                 fgColor="#32333D"
                 style={{ height: 35, width: 35 }}
               />
             </Link>
           </div>
         </div>
-        <div className="text-white w-1/2 flex">
+        <div className="text-white lg:w-1/2 md:w-full sm:w-full w-full flex">
           <img src={profile} className="h-full w-full"></img>
         </div>
       </div>
