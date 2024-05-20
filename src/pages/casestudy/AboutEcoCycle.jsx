@@ -4,7 +4,7 @@ const AboutEcoCycle = () => {
   return (
     <div className="min-h-screen py-10 text-white w-full flex lg:flex-row md:flex-col sm:flex-col flex-col gap-5 lg:p-20 md:px-16 sm:px-10 px-10 border-b-2 border-b-gray-500 justify-center items-center">
       <div className="lg:w-2/3 md:w-full sm:w-full w-full gap-6 flex flex-col lg:py-16 md:py-12 sm:py-8 py-8">
-        <p className="lg:text-8xl md:text-6xl sm:text-5xl text-5xl text-justify ">
+        <p className="lg:text-8xl md:text-6xl sm:text-4xl text-4xl text-white font-semibold">
           About{" "}
           <span className="font-bold">
             Eco<span className="text-[#C1D5FE]">Cycle</span>

@@ -11,7 +11,7 @@ const DevImageGallery = () => {
       {
         title: "Apptive",
         description:
-          "Nibh ac sit venenatis quisque doloribus! A amet viverra suspendisse, eos soluta saepe, enim sollicitudin error perferendis.",
+          "	Our website aims to establish itself as the go-to platform for seamless note-taking and interactive quizzing, providing an integrated solution for effective learning. We offer users the ability to capture and organize their notes effortlessly, while also allowing them to transform these notes into interactive quizzes to test their knowledge.",
         github_link: "https://github.com/alexabainza/apptive-wd",
         figma_link:
           "https://www.figma.com/file/s5YiRjVQxjsN9jP3yKfsXc/UI%2FUX-APPTIVE?type=design&node-id=347%3A27&mode=design&t=1iEzZSuR6AlImYBD-1",
@@ -23,7 +23,7 @@ const DevImageGallery = () => {
       {
         title: "Fitness Tracking App",
         description:
-          "Nibh ac sit venenatis quisque doloribus! A amet viverra suspendisse, eos soluta saepe, enim sollicitudin error perferendis.",
+          "The Fitness Tracking App's major purpose is to help users take charge of their health and fitness. The software encourages people to create and achieve fitness goals by providing an easy-to-use interface and a robust set of functions. From tracking workout progress to monitoring changes in body measures, this application is an efficient tool for anyone looking to improve their entire well-being.",
         github_link: "https://github.com/alexabainza/fitness-tracking-app",
         figma_link:
           "https://www.figma.com/file/s5YiRjVQxjsN9jP3yKfsXc/UI%2FUX-APPTIVE?type=design&node-id=347%3A27&mode=design&t=1iEzZSuR6AlImYBD-1",
@@ -43,7 +43,7 @@ const DevImageGallery = () => {
   };
   return (
     <>
-      <div class="grid gap-5">
+      <div class="gap-5">
         {portfolio.details.map((detail, index) => (
           <GalleryImage key={index} details={detail} />
         ))}

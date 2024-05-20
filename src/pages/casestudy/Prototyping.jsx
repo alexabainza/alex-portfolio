@@ -10,7 +10,7 @@ import "flowbite";
 const Prototyping = () => {
   return (
     <div className="min-h-screen py-16 lg:px-20 md:px-16 sm:px-8 px-8 flex flex-col gap-8 justify-start border-b-2 border-b-gray-500">
-      <p className="lg:text-8xl md:text-6xl sm:text-5xl text-5xl  font-semibold text-[#C1D5FE]">
+      <p className="lg:text-8xl md:text-6xl sm:text-4xl text-4xl text-[#C1D5FE] font-semibold">
         Prototyping
       </p>
       <p className="text-slate-300 lg:text-2xl md:text-lg sm:text-md text-md ">

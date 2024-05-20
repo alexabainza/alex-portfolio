@@ -13,16 +13,17 @@ import ResearchInsights from "./ResearchInsights";
 import ProblemStatement from "./ProblemStatement";
 import Brainstorming from "./Brainstorming";
 import Feedbacking from "./Feedbacking";
+import Impact from "./Impact";
 
 const CaseStudy = () => {
   return (
     <div className="gap-5 mt-16 min-h-full w-full">
       <div className=" overflow-hidden border-b-2 border-b-gray-500">
         <div className="h-screen flex flex-col gap-3 justify-start pt-10 relative z-10">
-          <h1 className="text-white text-center lg:text-8xl md:text-6xl sm:text-5xl text-5xl font-semibold">
+          <p className="lg:text-8xl md:text-6xl sm:text-4xl text-4xl text-white font-semibold text-center">
             Eco
             <span className="text-blue-400">Cycle</span>
-          </h1>
+          </p>
           <p className="text-white lg:text-xl md:text-lg sm:text-md text-md text-center">
             Harnessing the power of technology to combat environmental problems
           </p>
@@ -54,6 +55,7 @@ const CaseStudy = () => {
       <Prototyping />
       <Feedbacking />
       <FinalDesign />
+      <Impact />
       <Reflection />
     </div>
   );

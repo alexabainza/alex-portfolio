@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 
 const GalleryImage = ({ details }) => {
   return (
-    <div class="grid grid-cols-1 h-[100%] ">
-      <div className=" flex flex-row gap-8 pt-3">
-        <div className="gallery-image relative h-100">
+    <div class="grid grid-cols-1 h-[100%] py-10">
+      <div className="flex lg:flex-row sm:flex-col flex-col gap-8 pt-3">
+        <div className="gallery-image relative lg:w-[50%] sm:w-full w-full">
           <img
-            class="object-cover rounded-lg border-2 border-red-400"
+            class="object-cover rounded-lg border-2 border-red-400 "
             src={details.image}
             alt=""
           />
@@ -24,24 +24,26 @@ const GalleryImage = ({ details }) => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-start gap-5">
-          <h1 className="text-6xl font-semibold text-red-400">
+        <div className="flex flex-col justify-center items-start gap-5 lg:w-[60%] sm:w-full w-full">
+          <h2 className="text-red-400 text-start lg:text-6xl md:text-5xl sm:text-4xl text-4xl font-semibold">
             {details.title}
-          </h1>
-          <p className="text-white mb-5">{details.description}</p>
-          <div className="flex flex-col gap-3">
+          </h2>
+          <p className="lg:text-xl md:text-md sm:text-md text-md mb-5">
+            {details.description}
+          </p>
+          <div className="flex flex-col gap-3 text-xl">
             <Link
               to={details.figma_link}
-              className="gap-3 text-gray-400 hover:text-gray-100 flex"
+              className="gap-3 text-gray-400 hover:text-gray-100 flex items-center"
             >
-              <FaBrush style={{ color: "white", fontSize: "18px" }} />
+              <FaBrush size={20} color="white" className="hover:white" />
               View the UI here
             </Link>
             <Link
               to={details.github_link}
-              className="gap-3 text-gray-400 flex align-middle justify-center items-center hover:text-white"
+              className="gap-3 text-gray-400 flex align-middle justify-center items-center hover:text-white items-center"
             >
-              <FaCode style={{ color: "white", fontSize: "18px" }} />
+              <FaCode size={20} color="white" className="hover:white" />
               View code here
             </Link>
           </div>

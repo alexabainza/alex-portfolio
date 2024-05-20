@@ -56,7 +56,7 @@ const Reflection = () => {
         <div className="flex flex-col gap-4 rounded-lg bg-[#3A2B6D]  p-10">
           <h2 className="text-white text-start lg:text-4xl md:text-3xl sm:text-2xl text-2xl font-semibold">
             {" "}
-            Any unexpected insights:{" "}
+            Conclusion:
           </h2>
           <p className="text-slate-300 text-start lg:text-lg md:text-md sm:text-md text-md">
             {" "}
