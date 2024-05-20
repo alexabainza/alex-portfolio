@@ -6,6 +6,7 @@ import lfs1 from "../assets/portfolio/lfspeaker1.jpg";
 import cc1 from "../assets/portfolio/cc1.jpg";
 import rtr1 from "../assets/portfolio/rtr1.jpg";
 import rtr2 from "../assets/portfolio/rtr2.jpg";
+import testing from "../assets/portfolio/testing.jpg";
 
 const ImageGallery = () => {
   return (
@@ -36,11 +37,7 @@ const ImageGallery = () => {
               <img class="h-auto max-w-full rounded-lg" src={rtr1} alt="" />
             </div>
             <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
-                alt=""
-              />
+              <img class="h-auto max-w-full rounded-lg" src={testing} alt="" />
             </div>
             <div>
               <img class="h-auto max-w-full rounded-lg" src={cc1} alt="" />
