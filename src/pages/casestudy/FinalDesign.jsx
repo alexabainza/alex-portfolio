@@ -5,7 +5,7 @@ import { FaCode, FaBrush, FaPlay } from "react-icons/fa";
 
 const FinalDesign = () => {
   return (
-    <div className="w-full flex flex-col gap-10 h-screen p-20 border-b-2 border-b-gray-500">
+    <div className="w-full flex flex-col gap-10 min-h-screen p-20 border-b-2 border-b-gray-500">
       <span className="font-bold text-white text-7xl text-center">
         Final <span className="text-[#C1D5FE]">Design</span>
       </span>

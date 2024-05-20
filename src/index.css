@@ -14,21 +14,24 @@ body {
 }
 
 .hover:transform {
-  /* Define your desired scale here */
-  transform: scale(1.05); /* Example: Increase size by 5% */
+  transform: scale(1.05);
 }
 .gallery-image-container {
-  position: relative; /* Ensure container can properly position its content */
-  overflow: hidden; /* Hide any overflow to contain scaled image */
+  position: relative;
+  overflow: hidden;
 }
 
 .gallery-image {
-  transition: transform 0.3s; /* Add smooth transition effect */
+  transition: transform 0.3s;
   object-fit: cover;
-  max-width: 100%; /* Ensure the image adjusts its width dynamically */
+  max-width: 100%;
 }
 
 .gallery-image:hover {
-  transform: scale(1.05); /* Scale the image by 20% when hovered */
-  opacity: 1; /* Fully visible on hover */
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.active {
+  color: "#97EFE9";
 }

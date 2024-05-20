@@ -10,6 +10,9 @@ import UserTesting from "./UserTesting";
 import Reflection from "./Reflection";
 import FinalDesign from "./FinalDesign";
 import ResearchInsights from "./ResearchInsights";
+import ProblemStatement from "./ProblemStatement";
+import Brainstorming from "./Brainstorming";
+import Feedbacking from "./Feedbacking";
 
 const CaseStudy = () => {
   return (
@@ -51,9 +54,12 @@ const CaseStudy = () => {
       </div>
 
       <AboutEcoCycle />
+      <ProblemStatement />
       <UserPersona />
+      <Brainstorming />
       <ResearchInsights />
       <Prototyping />
+      <Feedbacking />
       <FinalDesign />
       <Reflection />
     </div>

@@ -15,14 +15,14 @@ function Landing() {
     }
   };
   useEffect(() => {
-    const navbarElement = document.querySelector(".navbar"); // Adjust selector
+    const navbarElement = document.querySelector(".navbar");
     if (navbarElement) {
       setNavbarHeight(navbarElement.offsetHeight);
     }
   }, []);
   return (
     <div className="flex flex-col gap-3 min-h-screen">
-      <div className="mt-10 px-48 h-screen border-2 flex flex-row align-center items-center">
+      <div className="mt-10 px-48 h-screen flex flex-row align-center items-center">
         <div className="flex flex-col w-1/2 content-center gap-20">
           <div className="intro">
             <h1 className="text-8xl text-white">
@@ -69,9 +69,9 @@ function Landing() {
             </Link>
           </div>
         </div>
-        {/* <div className="text-white w-1/2 flex">
+        <div className="text-white w-1/2 flex">
           <img src={profile} className="h-full w-full"></img>
-        </div> */}
+        </div>
       </div>
       <AboutMe />
       <Experiences />

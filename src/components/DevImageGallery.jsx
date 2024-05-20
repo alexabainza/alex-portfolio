@@ -1,5 +1,6 @@
 import React from "react";
 import apptive from "../assets/ApptiveMain.png";
+import fitness from "../assets/fitnessdemo.jpg";
 
 import { SocialIcon } from "react-social-icons";
 import GalleryImage from "./GalleryImage";
@@ -26,9 +27,9 @@ const DevImageGallery = () => {
         github_link: "https://github.com/alexabainza/fitness-tracking-app",
         figma_link:
           "https://www.figma.com/file/s5YiRjVQxjsN9jP3yKfsXc/UI%2FUX-APPTIVE?type=design&node-id=347%3A27&mode=design&t=1iEzZSuR6AlImYBD-1",
-        image: apptive,
+        image: fitness,
         demo_link:
-          "https://drive.google.com/file/d/1jaZzfNXySFXSvPYSpUIhD9HRvKUkfy28/view?usp=sharing",
+          "https://drive.google.com/file/d/1cKTCLJWJD9gCQcqomkmzm43cca0Rybp0/view?usp=sharing",
         category: [
           "Java Springboot",
           "React",

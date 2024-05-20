@@ -4,7 +4,7 @@ import FeaturesCard from "../components/FeaturesCard";
 const AboutMe = () => {
   return (
     <div
-      className="px-20 h-screen border-2 flex flex-col justify-center align-center"
+      className="px-20 h-screen bg-[#6F4A95] flex flex-col justify-center items-center"
       id="about"
     >
       <h1 className="text-white text-6xl text-center">

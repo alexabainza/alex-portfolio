@@ -2,7 +2,7 @@ import React from "react";
 import techwaste from "../../assets/e-waste.jpg";
 const ResearchInsights = () => {
   return (
-    <div className="px-20 h-screen flex py-16 gap-8 flex-row border-b-2 border-b-gray-500">
+    <div className="px-20 min-h-screen flex py-16 gap-8 flex-row border-b-2 border-b-gray-500">
       <div className="w-3/5 flex flex-col gap-8 justify-center p-8">
         <h1 className="text-white text-start text-7xl font-semibold">
           Research <span className="text-[#C1D5FE] font-bold">Insights</span>
