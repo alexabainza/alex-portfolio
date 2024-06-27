@@ -24,26 +24,26 @@ const GalleryImage = ({ details }) => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-start gap-5 lg:w-[60%] sm:w-full w-full">
-          <h2 className="text-red-400 text-start lg:text-6xl md:text-5xl sm:text-4xl text-4xl font-semibold">
+        <div className="flex flex-col justify-center items-start gap-3 lg:w-[60%] sm:w-full w-full">
+          <h2 className="text-red-400 text-start lg:text-4xl md:text-3xl sm:text-2xl text-2xl font-semibold">
             {details.title}
           </h2>
-          <p className="lg:text-xl md:text-md sm:text-md text-md mb-5">
+          <p className="lg:text-md md:text-md sm:text-md text-md mb-5">
             {details.description}
           </p>
-          <div className="flex flex-col gap-3 text-xl">
+          <div className="flex flex-col gap-1 text-lg">
             <Link
               to={details.figma_link}
               className="gap-3 text-gray-400 hover:text-gray-100 flex items-center"
             >
-              <FaBrush size={20} color="white" className="hover:white" />
+              <FaBrush size={15} color="white" className="hover:white" />
               View the UI here
             </Link>
             <Link
               to={details.github_link}
-              className="gap-3 text-gray-400 flex align-middle justify-center items-center hover:text-white items-center"
+              className="gap-3 text-gray-400 flex align-middle justify-center items-center hover:text-white"
             >
-              <FaCode size={20} color="white" className="hover:white" />
+              <FaCode size={15} color="white" className="hover:white" />
               View code here
             </Link>
           </div>

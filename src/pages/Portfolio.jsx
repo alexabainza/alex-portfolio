@@ -9,13 +9,13 @@ const Portfolio = () => {
     setActiveTab(tab);
   };
   return (
-    <div className="min-h-screen lg:mt-28 sm:mt-24 mt-24  flex flex-col">
+    <div className="min-h-screen lg:mt-24 sm:mt-24 mt-24  flex flex-col">
       <div className="sticky w-[100%] header top-10 z-10 bg-[#1f1345] lg:px-20 md:px-16 sm:px-8 px-8">
         <div className="flex flex-col gap-4">
-          <p className="lg:text-7xl md:text-5xl sm:text-4xl text-4xl text-justify text-white font-semibold">
+          <p className="lg:text-6xl md:text-5xl sm:text-4xl text-4xl text-justify text-white font-semibold">
             My Portfolio
           </p>
-          <p className="text-slate-300 lg:text-2xl md:text-lg sm:text-md text-md text-start">
+          <p className="text-slate-300 lg:text-xl md:text-lg sm:text-md text-md text-start">
             I dabble with different things. I may not be the best in them, but
             at the very least, I could say that I tried.
           </p>

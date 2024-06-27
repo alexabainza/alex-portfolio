@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "flowbite";
 import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
@@ -8,6 +8,9 @@ import CaseStudy from "./pages/casestudy/CaseStudy";
 import Portfolio from "./pages/Portfolio";
 
 function App() {
+  useEffect(() => {
+    document.title = "Alex's Portfolio";
+  }, []);
   return (
     <>
       <BrowserRouter>
